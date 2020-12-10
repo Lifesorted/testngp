@@ -1,0 +1,10 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 5, Failures: 1, Errors: 0, Skipped: 4, Time elapsed: 1.548 s <<< FAILURE! - in TestSuite
+launchApp(testngPrac.testngp.baseClass)  Time elapsed: 0.122 s  <<< FAILURE!
+org.testng.TestNGException: 
+
+Parameter 'browser' is required by BeforeSuite on method launchApp but has not been marked @Optional or defined
+in D:\Eclipse_Project\testngp\testng.xml
+
