@@ -31,6 +31,7 @@ public class GoogleHome extends baseClass {
 		Assert.assertEquals(currenturl, "https://www.appypie.com/");
 	}
 	
+	//method to get all options of language
 	public void getlangOptions() {
 		Actions actions=new Actions(driver);
 		actions.moveToElement(langoptions).build().perform();
