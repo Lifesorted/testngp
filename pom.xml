@@ -46,12 +46,6 @@
     <artifactId>poi-ooxml</artifactId>
     <version>4.0.1</version>
 </dependency>
-   <!-- https://mvnrepository.com/artifact/com.aventstack/extentreports -->
-<dependency>
-    <groupId>com.aventstack</groupId>
-    <artifactId>extentreports</artifactId>
-    <version>3.0.7</version>
-</dependency>
    <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-firefox-driver -->
 <dependency>
     <groupId>org.seleniumhq.selenium</groupId>

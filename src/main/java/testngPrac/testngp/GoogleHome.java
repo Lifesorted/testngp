@@ -94,7 +94,7 @@ public class GoogleHome extends baseClass {
 	@FindBy(xpath = "//ul[@id=\"introStyle\"]/child::li[4]")
 	WebElement elementtobeadd;
 	
-	@FindBy(xpath = "//ul[@class=\"app_info_list\"]/child::li[text()=\"BID: 54158ef6c991\"]")
+	@FindBy(xpath = "//div[@class=\"text-right col-md-12 col-sm-12\"]/descendant::span")
 	WebElement BID;
 	
 	@FindBy(xpath = "//li[@class=\"dropdown\"]/child::a")
@@ -167,7 +167,7 @@ public class GoogleHome extends baseClass {
 		searchFieldElement.sendKeys("appium");
 		searchbtnElement.click();
 		String bidString=BID.getText();
-		Assert.assertEquals(bidString,"BID: 54158ef6c991");
+		Assert.assertEquals(bidString,"BID:54158ef6c991");
 	}
 	
 	protected void allMenuOptions() {
