@@ -1,18 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite configfailurepolicy="continue" guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [AppypieSuite]" parallel="tests">
-  <test thread-count="5" verbose="0" name="ChromeTest(failed)" parallel="tests">
-    <parameter name="browser" value="firefox"/>
+<suite configfailurepolicy="continue" guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [AppypieSuite]">
+  <test thread-count="5" verbose="0" name="FirefoxTest(failed)">
     <classes>
-      <class name="testngPrac.testngp.baseClass">
+      <class name="testngPrac.testngp.testcase">
         <methods>
-          <include name="verifyTitle"/>
+          <include name="setupSuite"/>
           <include name="launchApp"/>
-          <include name="closeApp"/>
-          <include name="verifyCurrentUrl"/>
-          <include name="getGoogleImage"/>
+          <include name="tearDown"/>
+          <include name="addFeatureTest"/>
         </methods>
-      </class> <!-- testngPrac.testngp.baseClass -->
+      </class> <!-- testngPrac.testngp.testcase -->
     </classes>
-  </test> <!-- ChromeTest(failed) -->
+  </test> <!-- FirefoxTest(failed) -->
 </suite> <!-- Failed suite [AppypieSuite] -->

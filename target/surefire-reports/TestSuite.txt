@@ -1,10 +1,19 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 5, Failures: 1, Errors: 0, Skipped: 4, Time elapsed: 1.548 s <<< FAILURE! - in TestSuite
-launchApp(testngPrac.testngp.baseClass)  Time elapsed: 0.122 s  <<< FAILURE!
-org.testng.TestNGException: 
+Tests run: 2, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 41.665 s <<< FAILURE! - in TestSuite
+addFeatureTest(testngPrac.testngp.testcase)  Time elapsed: 20.719 s  <<< FAILURE!
+org.openqa.selenium.StaleElementReferenceException: 
+stale element reference: element is not attached to the page document
+  (Session info: chrome=87.0.4280.88)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: '3.141.5', revision: 'd54ebd709a', time: '2018-11-06T11:42:16'
+System info: host: 'DESKTOP-BM4NCDP', ip: '192.168.1.9', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_261'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.88, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: C:\Users\ABC\AppData\Local\...}, goog:chromeOptions: {debuggerAddress: localhost:60585}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 13b74ac68693098a6b4afb6677b1b045
+	at testngPrac.testngp.testcase.addFeatureTest(testcase.java:69)
 
-Parameter 'browser' is required by BeforeSuite on method launchApp but has not been marked @Optional or defined
-in D:\Eclipse_Project\testngp\testng.xml
+tearDown(testngPrac.testngp.testcase)  Time elapsed: 21.785 s  <<< FAILURE!
+java.lang.NullPointerException
 

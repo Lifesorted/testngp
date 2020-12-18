@@ -25,11 +25,47 @@ public class testcase extends baseClass {
 	 
 	  
 	
-	  @Test(priority = 1,description = "Verify all lang option test") public void
-	  getlangOptionsTest() { GoogleHome gHome=new GoogleHome(driver);
-	  gHome.getlangOptions();
+	/*
+	 * @Test(priority = 1,description = "Verify all lang option test") public void
+	 * getlangOptionsTest() { GoogleHome gHome=new GoogleHome(driver);
+	 * gHome.getlangOptions();
+	 * 
+	 * }
+	 */
 	  
+	/*
+	 * @Test public void getAllDiyOptions() { GoogleHome gHome=new
+	 * GoogleHome(driver); gHome.getDiyOptions(); }
+	 */
+	 
+	/*
+	 * @Test public void creatorProcessTest() { GoogleHome gHome=new
+	 * GoogleHome(driver); gHome.creatorProcess(); }
+	 */
+	  
+	/*
+	 * @Test public void AllMenuOptionTest() { GoogleHome gHome=new
+	 * GoogleHome(driver); gHome.allMenuOptions(); }
+	 */
+	
+	/*
+	 * @Test public void searchAppTest() { GoogleHome gHome=new GoogleHome(driver);
+	 * gHome.searchAppTest(); }
+	 */
+	
+	/*
+	 * @Test public void logoutAppTest() { GoogleHome gHome=new GoogleHome(driver);
+	 * gHome.logoutToApp(); }
+	 */
+	
+	/*
+	 * @Test public void addFeatureTest() { GoogleHome gHome=new GoogleHome(driver);
+	 * gHome.editApp(); }
+	 */
+	
+	@Test
+	  public void addFeatureTest() {
+		  GoogleHome gHome=new GoogleHome(driver);
+		  gHome.downloadLinkVerify();
 	  }
-	 
-	 
 }
