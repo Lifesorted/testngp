@@ -48,10 +48,10 @@ public class testcase extends baseClass {
 	 * GoogleHome(driver); gHome.allMenuOptions(); }
 	 */
 	
-	/*
-	 * @Test public void searchAppTest() { GoogleHome gHome=new GoogleHome(driver);
-	 * gHome.searchAppTest(); }
-	 */
+	
+	  @Test public void searchAppTest() { GoogleHome gHome=new GoogleHome(driver);
+	  gHome.searchAppTest(); }
+	 
 	
 	/*
 	 * @Test public void logoutAppTest() { GoogleHome gHome=new GoogleHome(driver);
@@ -63,9 +63,8 @@ public class testcase extends baseClass {
 	 * gHome.editApp(); }
 	 */
 	
-	@Test
-	  public void addFeatureTest() {
-		  GoogleHome gHome=new GoogleHome(driver);
-		  gHome.downloadLinkVerify();
-	  }
+	/*
+	 * @Test public void addFeatureTest() { GoogleHome gHome=new GoogleHome(driver);
+	 * gHome.downloadLinkVerify(); }
+	 */
 }
