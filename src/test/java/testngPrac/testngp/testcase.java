@@ -48,8 +48,8 @@ public class testcase extends baseClass {
 	 * GoogleHome(driver); gHome.allMenuOptions(); }
 	 */
 	
-	  @Test public void searchAppTest() { GoogleHome gHome=new GoogleHome(driver);
-	  gHome.searchAppTest(); }
+	//  @Test public void searchAppTest() { GoogleHome gHome=new GoogleHome(driver);
+	 // gHome.searchAppTest(); }
 	 
 	
 	/*
