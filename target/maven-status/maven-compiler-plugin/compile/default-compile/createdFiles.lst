@@ -1,5 +1,7 @@
+util\getPropertyData.class
+testngPrac\testngp\GoogleHome.class
+util\pok.class
 testngPrac\testngp\baseClass.class
 util\Reports.class
 util\GetexcelData.class
 util\CaptureScreenshot.class
-testngPrac\testngp\GoogleHome.class

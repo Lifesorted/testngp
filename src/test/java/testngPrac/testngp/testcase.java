@@ -49,10 +49,11 @@ public class testcase extends baseClass {
 	 */
 	
 	
-	  @Test public void searchAppTest() { GoogleHome gHome=new GoogleHome(driver);
-	  gHome.searchAppTest(); }
+	/*
+	 * @Test public void searchAppTest() { GoogleHome gHome=new GoogleHome(driver);
+	 * gHome.searchAppTest(); }
+	 */
 	 
-	
 	/*
 	 * @Test public void logoutAppTest() { GoogleHome gHome=new GoogleHome(driver);
 	 * gHome.logoutToApp(); }

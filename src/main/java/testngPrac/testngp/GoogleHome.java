@@ -76,7 +76,7 @@ public class GoogleHome extends baseClass {
 	@FindBy(xpath="//ul[@class=\"nav navbar-nav s-nav de-home-menu\"]/child::li")
 	WebElement allmenuElement;
 	
-	@FindBy(xpath = "//div[@class=\"search_myApp m-r-15 on pull-left flip\"]/child::input")
+	@FindBy(xpath = "//div[@class=\"search_myApp m-r-15 on pull-left flip\"]/child::input[@name=\"searchPage\"]")
 	WebElement searchFieldElement;
 	
 	@FindBy(xpath = "//div[@class=\"search_myApp m-r-15 on pull-left flip\"]/child::button")
@@ -164,7 +164,14 @@ public class GoogleHome extends baseClass {
 	
 	protected void searchAppTest() {
 		loginToApp();
-		searchFieldElement.sendKeys("appium");
+		try {
+			Thread.sleep(3000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		sendKeyswait(driver, searchFieldElement, 40, "appium");
+		//searchFieldElement.sendKeys("appium");
 		searchbtnElement.click();
 		String bidString=BID.getText();
 		Assert.assertEquals(bidString,"BID:54158ef6c991");
@@ -249,6 +256,11 @@ public class GoogleHome extends baseClass {
 		new WebDriverWait(driver,timeout).until(ExpectedConditions.elementToBeClickable(element));
 		element.click();
 		
+	}
+	
+	public static void sendKeyswait(WebDriver driver,WebElement element,int timeout,String value) {
+		new WebDriverWait(driver, timeout).until(ExpectedConditions.visibilityOf(element));
+		element.sendKeys(value);
 	}
 	
 	

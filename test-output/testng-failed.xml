@@ -8,7 +8,7 @@
           <include name="setupSuite"/>
           <include name="launchApp"/>
           <include name="tearDown"/>
-          <include name="addFeatureTest"/>
+          <include name="searchAppTest"/>
         </methods>
       </class> <!-- testngPrac.testngp.testcase -->
     </classes>
