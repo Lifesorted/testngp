@@ -24,12 +24,20 @@ public class testcase extends baseClass {
 	 */
 	 
 	  
+	//test
 	
+<<<<<<< HEAD
 	
 	  @Test(priority = 1,description = "Verify all lang option test") public void
 	  getlangOptionsTest() { GoogleHome gHome=new GoogleHome(driver);
 	  gHome.getlangOptions();
 	  
+=======
+	  @Test(priority = 1,description = "Verify all lang option test") public void
+	  getlangOptionsTest() { GoogleHome gHome=new GoogleHome(driver);
+	  gHome.getlangOptions();
+	 
+>>>>>>> 8c71001821ac904c08c8aa48d82e515f77018cbb
 	  }
 	 
 	  
@@ -48,11 +56,16 @@ public class testcase extends baseClass {
 	 * GoogleHome(driver); gHome.allMenuOptions(); }
 	 */
 	
+<<<<<<< HEAD
 	
 	/*
 	 * @Test public void searchAppTest() { GoogleHome gHome=new GoogleHome(driver);
 	 * gHome.searchAppTest(); }
 	 */
+=======
+	//  @Test public void searchAppTest() { GoogleHome gHome=new GoogleHome(driver);
+	 // gHome.searchAppTest(); }
+>>>>>>> 8c71001821ac904c08c8aa48d82e515f77018cbb
 	 
 	/*
 	 * @Test public void logoutAppTest() { GoogleHome gHome=new GoogleHome(driver);
