@@ -2,20 +2,20 @@
 <testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="87293" started-at="2020-12-22T16:21:16Z" finished-at="2020-12-22T16:22:43Z">
+  <suite name="Default suite" duration-ms="106925" started-at="2020-12-22T17:54:04Z" finished-at="2020-12-22T17:55:51Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="87293" started-at="2020-12-22T16:21:16Z" finished-at="2020-12-22T16:22:43Z">
+    <test name="Default test" duration-ms="106925" started-at="2020-12-22T17:54:04Z" finished-at="2020-12-22T17:55:51Z">
       <class name="testngPrac.testngp.testcase">
-        <test-method status="PASS" signature="setupSuite()[pri:0, instance:testngPrac.testngp.testcase@42d80b78]" name="setupSuite" is-config="true" duration-ms="222" started-at="2020-12-22T21:51:16Z" finished-at="2020-12-22T21:51:16Z">
+        <test-method status="PASS" signature="setupSuite()[pri:0, instance:testngPrac.testngp.testcase@42d80b78]" name="setupSuite" is-config="true" duration-ms="224" started-at="2020-12-22T23:24:04Z" finished-at="2020-12-22T23:24:04Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupSuite -->
-        <test-method status="PASS" signature="launchApp()[pri:0, instance:testngPrac.testngp.testcase@42d80b78]" name="launchApp" is-config="true" duration-ms="15695" started-at="2020-12-22T21:51:16Z" finished-at="2020-12-22T21:51:32Z">
+        <test-method status="PASS" signature="launchApp()[pri:0, instance:testngPrac.testngp.testcase@42d80b78]" name="launchApp" is-config="true" duration-ms="20711" started-at="2020-12-22T23:24:04Z" finished-at="2020-12-22T23:24:24Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchApp -->
-        <test-method status="FAIL" signature="searchAppTest()[pri:0, instance:testngPrac.testngp.testcase@42d80b78]" name="searchAppTest" duration-ms="71160" started-at="2020-12-22T21:51:32Z" finished-at="2020-12-22T21:52:43Z">
+        <test-method status="FAIL" signature="searchAppTest()[pri:0, instance:testngPrac.testngp.testcase@42d80b78]" name="searchAppTest" duration-ms="71725" started-at="2020-12-22T23:24:24Z" finished-at="2020-12-22T23:25:36Z">
           <exception class="org.openqa.selenium.TimeoutException">
             <message>
               <![CDATA[Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //div[@class="search_myApp m-r-15 on pull-left flip"]/child::input[@name="searchPage"]' (tried for 40 second(s) with 500 milliseconds interval)]]>
@@ -26,7 +26,7 @@
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
 	at testngPrac.testngp.GoogleHome.sendKeyswait(GoogleHome.java:262)
 	at testngPrac.testngp.GoogleHome.searchAppTest(GoogleHome.java:173)
-	at testngPrac.testngp.testcase.searchAppTest(testcase.java:54)
+	at testngPrac.testngp.testcase.searchAppTest(testcase.java:50)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -58,8 +58,8 @@ For documentation on this error, please visit: http://seleniumhq.org/exceptions/
 Build info: version: '3.141.5', revision: 'd54ebd709a', time: '2018-11-06T11:42:16'
 System info: host: 'DESKTOP-BM4NCDP', ip: '192.168.1.9', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_261'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.88, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: C:\Users\ABC\AppData\Local\...}, goog:chromeOptions: {debuggerAddress: localhost:54920}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 3047a717f61e36c9ecda5264720cc81e
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.88, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: C:\Users\ABC\AppData\Local\...}, goog:chromeOptions: {debuggerAddress: localhost:60021}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 4bdab9525b76ebd93a4d519273122738
 *** Element info: {Using=xpath, value=//div[@class="search_myApp m-r-15 on pull-left flip"]/child::input[@name="searchPage"]}
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
@@ -90,7 +90,7 @@ Session ID: 3047a717f61e36c9ecda5264720cc81e
           <reporter-output>
           </reporter-output>
         </test-method> <!-- searchAppTest -->
-        <test-method status="FAIL" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testngPrac.testngp.testcase@42d80b78]" name="tearDown" is-config="true" duration-ms="413" started-at="2020-12-22T21:52:43Z" finished-at="2020-12-22T21:52:43Z">
+        <test-method status="FAIL" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testngPrac.testngp.testcase@42d80b78]" name="tearDown" is-config="true" duration-ms="14438" started-at="2020-12-22T23:25:36Z" finished-at="2020-12-22T23:25:51Z">
           <params>
             <param index="0">
               <value>
