@@ -1,29 +1,48 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="24200" started-at="2021-01-02T10:04:43Z" finished-at="2021-01-02T10:05:08Z">
+  <suite name="Default suite" duration-ms="43303" started-at="2021-01-02T10:55:44Z" finished-at="2021-01-02T10:56:28Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="24200" started-at="2021-01-02T10:04:43Z" finished-at="2021-01-02T10:05:08Z">
+    <test name="Default test" duration-ms="43303" started-at="2021-01-02T10:55:44Z" finished-at="2021-01-02T10:56:28Z">
       <class name="testngPrac.testngp.testcase">
-        <test-method status="PASS" signature="setupSuite()[pri:0, instance:testngPrac.testngp.testcase@42d80b78]" name="setupSuite" is-config="true" duration-ms="230" started-at="2021-01-02T15:34:43Z" finished-at="2021-01-02T15:34:43Z">
+        <test-method status="PASS" signature="setupSuite()[pri:0, instance:testngPrac.testngp.testcase@42d80b78]" name="setupSuite" is-config="true" duration-ms="217" started-at="2021-01-02T16:25:44Z" finished-at="2021-01-02T16:25:44Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupSuite -->
-        <test-method status="PASS" signature="launchApp()[pri:0, instance:testngPrac.testngp.testcase@42d80b78]" name="launchApp" is-config="true" duration-ms="12056" started-at="2021-01-02T15:34:43Z" finished-at="2021-01-02T15:34:55Z">
+        <test-method status="PASS" signature="launchApp()[pri:0, instance:testngPrac.testngp.testcase@42d80b78]" name="launchApp" is-config="true" duration-ms="8850" started-at="2021-01-02T16:25:44Z" finished-at="2021-01-02T16:25:53Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchApp -->
-        <test-method status="PASS" signature="searchAppTest()[pri:0, instance:testngPrac.testngp.testcase@42d80b78]" name="searchAppTest" duration-ms="12048" started-at="2021-01-02T15:34:55Z" finished-at="2021-01-02T15:35:08Z">
+        <test-method status="PASS" signature="searchAppTest()[pri:0, instance:testngPrac.testngp.testcase@42d80b78]" name="searchAppTest" duration-ms="13313" started-at="2021-01-02T16:25:53Z" finished-at="2021-01-02T16:26:07Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- searchAppTest -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testngPrac.testngp.testcase@42d80b78]" name="tearDown" is-config="true" duration-ms="73" started-at="2021-01-02T15:35:08Z" finished-at="2021-01-02T15:35:08Z">
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testngPrac.testngp.testcase@42d80b78]" name="tearDown" is-config="true" duration-ms="5195" started-at="2021-01-02T16:26:07Z" finished-at="2021-01-02T16:26:12Z">
           <params>
             <param index="0">
               <value>
                 <![CDATA[[TestResult name=searchAppTest status=SUCCESS method=testcase.searchAppTest()[pri:0, instance:testngPrac.testngp.testcase@42d80b78] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="launchApp()[pri:0, instance:testngPrac.testngp.testcase@42d80b78]" name="launchApp" is-config="true" duration-ms="11932" started-at="2021-01-02T16:26:12Z" finished-at="2021-01-02T16:26:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApp -->
+        <test-method status="PASS" signature="verifyTitleTest()[pri:1, instance:testngPrac.testngp.testcase@42d80b78]" name="verifyTitleTest" duration-ms="50" started-at="2021-01-02T16:26:24Z" description="verify title test" finished-at="2021-01-02T16:26:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyTitleTest -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testngPrac.testngp.testcase@42d80b78]" name="tearDown" is-config="true" duration-ms="3953" started-at="2021-01-02T16:26:24Z" finished-at="2021-01-02T16:26:28Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyTitleTest status=SUCCESS method=testcase.verifyTitleTest()[pri:1, instance:testngPrac.testngp.testcase@42d80b78] output={null}]]]>
               </value>
             </param>
           </params>

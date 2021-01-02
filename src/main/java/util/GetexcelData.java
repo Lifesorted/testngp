@@ -19,7 +19,7 @@ public class GetexcelData {
 		fis=new FileInputStream(srcFile);
 	    workbook=new XSSFWorkbook(fis);
 	    sheets=workbook.getSheetAt(0);
-		String browserval=sheets.getRow(0).getCell(1).getStringCellValue();
+		String browserval=sheets.getRow(0).getCell(2).getStringCellValue();
 		return browserval;
 	}
 	

@@ -49,7 +49,7 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-Default_suite">
-                    <span>C:\Users\ABC\AppData\Local\Temp\testng-eclipse-1325717952\testng-customsuite.xml</span>
+                    <span>C:\Users\ABC\AppData\Local\Temp\testng-eclipse-683134738\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">2 methods,   2 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -103,6 +103,11 @@
                       <span>
                         <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="testngPrac.testngp.testcase" hash-for-method="searchAppTest">searchAppTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="testngPrac.testngp.testcase" hash-for-method="verifyTitleTest">verifyTitleTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Default_suite -->
@@ -130,12 +135,21 @@
                   <span class="method-name">searchAppTest</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyTitleTest">
+                  </a> <!-- verifyTitleTest -->
+                  <span class="method-name">verifyTitleTest</span>
+                  <em>
+(verify title test)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Default_suite-class-passed -->
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\ABC\AppData\Local\Temp\testng-eclipse-1325717952\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\ABC\AppData\Local\Temp\testng-eclipse-683134738\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -184,16 +198,20 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(2);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'searchAppTest')
 data.setCell(0, 2, 'testngPrac.testngp.testcase')
-data.setCell(0, 3, 12048);
+data.setCell(0, 3, 13313);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'verifyTitleTest')
+data.setCell(1, 2, 'testngPrac.testngp.testcase')
+data.setCell(1, 3, 50);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 12 seconds</span>
+              <span class="suite-total-time">Total running time: 13 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -226,15 +244,27 @@ return data;
               </div> <!-- configuration-suite before -->
               <div class="configuration-method before">
                 <span class="method-name">launchApp</span>
-                <span class="method-start">247 ms</span>
+                <span class="method-start">227 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">searchAppTest</span>
-                <span class="method-start">12303 ms</span>
+                <span class="method-start">9077 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown([TestResult name=searchAppTest status=SUCCESS method=testcase.searchAppTest()[pri:0, instance:testng...)</span>
-                <span class="method-start">24353 ms</span>
+                <span class="method-start">22390 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">launchApp</span>
+                <span class="method-start">27585 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyTitleTest</span>
+                <span class="method-start">39517 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=verifyTitleTest status=SUCCESS method=testcase.verifyTitleTest()[pri:1, instance:te...)</span>
+                <span class="method-start">39567 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
