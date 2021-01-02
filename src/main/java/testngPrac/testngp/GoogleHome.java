@@ -16,6 +16,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 
 public class GoogleHome extends baseClass {
+	WebDriver driver;
 
 	GoogleHome(WebDriver driver){
 		this.driver=driver;

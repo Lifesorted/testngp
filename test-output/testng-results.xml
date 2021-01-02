@@ -2,24 +2,24 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="31866" started-at="2021-01-02T09:51:24Z" finished-at="2021-01-02T09:51:55Z">
+  <suite name="Default suite" duration-ms="24200" started-at="2021-01-02T10:04:43Z" finished-at="2021-01-02T10:05:08Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="31866" started-at="2021-01-02T09:51:24Z" finished-at="2021-01-02T09:51:55Z">
+    <test name="Default test" duration-ms="24200" started-at="2021-01-02T10:04:43Z" finished-at="2021-01-02T10:05:08Z">
       <class name="testngPrac.testngp.testcase">
-        <test-method status="PASS" signature="setupSuite()[pri:0, instance:testngPrac.testngp.testcase@42d80b78]" name="setupSuite" is-config="true" duration-ms="250" started-at="2021-01-02T15:21:23Z" finished-at="2021-01-02T15:21:24Z">
+        <test-method status="PASS" signature="setupSuite()[pri:0, instance:testngPrac.testngp.testcase@42d80b78]" name="setupSuite" is-config="true" duration-ms="230" started-at="2021-01-02T15:34:43Z" finished-at="2021-01-02T15:34:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupSuite -->
-        <test-method status="PASS" signature="launchApp()[pri:0, instance:testngPrac.testngp.testcase@42d80b78]" name="launchApp" is-config="true" duration-ms="16821" started-at="2021-01-02T15:21:24Z" finished-at="2021-01-02T15:21:40Z">
+        <test-method status="PASS" signature="launchApp()[pri:0, instance:testngPrac.testngp.testcase@42d80b78]" name="launchApp" is-config="true" duration-ms="12056" started-at="2021-01-02T15:34:43Z" finished-at="2021-01-02T15:34:55Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchApp -->
-        <test-method status="PASS" signature="searchAppTest()[pri:0, instance:testngPrac.testngp.testcase@42d80b78]" name="searchAppTest" duration-ms="14156" started-at="2021-01-02T15:21:40Z" finished-at="2021-01-02T15:21:55Z">
+        <test-method status="PASS" signature="searchAppTest()[pri:0, instance:testngPrac.testngp.testcase@42d80b78]" name="searchAppTest" duration-ms="12048" started-at="2021-01-02T15:34:55Z" finished-at="2021-01-02T15:35:08Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- searchAppTest -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testngPrac.testngp.testcase@42d80b78]" name="tearDown" is-config="true" duration-ms="867" started-at="2021-01-02T15:21:55Z" finished-at="2021-01-02T15:21:55Z">
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testngPrac.testngp.testcase@42d80b78]" name="tearDown" is-config="true" duration-ms="73" started-at="2021-01-02T15:35:08Z" finished-at="2021-01-02T15:35:08Z">
           <params>
             <param index="0">
               <value>

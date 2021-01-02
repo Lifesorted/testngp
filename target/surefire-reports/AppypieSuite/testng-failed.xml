@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite configfailurepolicy="continue" guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [AppypieSuite]">
-  <test thread-count="5" verbose="0" name="FirefoxTest(failed)">
+  <test thread-count="5" verbose="0" name="safaritest(failed)">
+    <parameter name="browser" value="safari"/>
     <classes>
       <class name="testngPrac.testngp.testcase">
         <methods>
@@ -12,5 +13,5 @@
         </methods>
       </class> <!-- testngPrac.testngp.testcase -->
     </classes>
-  </test> <!-- FirefoxTest(failed) -->
+  </test> <!-- safaritest(failed) -->
 </suite> <!-- Failed suite [AppypieSuite] -->

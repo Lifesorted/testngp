@@ -9,11 +9,11 @@ import util.CaptureScreenshot;
 public class testcase extends baseClass {
 	
 	
-	/*
-	 * @Test(priority = 1,description = "verify title test") public void
-	 * verifyTitleTest() { GoogleHome gHome=new GoogleHome(driver);
-	 * gHome.sgetSiteTitle(); extent.createTest("Verify title test"); }
-	 */
+	
+	  @Test(priority = 1,description = "verify title test") public void
+	  verifyTitleTest() { GoogleHome gHome=new GoogleHome(driver);
+	  gHome.sgetSiteTitle(); extent.createTest("Verify title test"); }
+	 
 	
 	/*
 	 * @Test(priority = 2,description = "verify current url test") public void

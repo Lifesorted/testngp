@@ -1,7 +1,9 @@
 util\getPropertyData.class
+testngPrac\testngp\enums\Browser.class
 testngPrac\testngp\GoogleHome.class
 util\pok.class
 testngPrac\testngp\baseClass.class
+testngPrac\testngp\enums\OS.class
 util\Reports.class
 util\GetexcelData.class
 util\CaptureScreenshot.class

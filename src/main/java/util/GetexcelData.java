@@ -63,7 +63,9 @@ public class GetexcelData {
 		workbook=new XSSFWorkbook(fis);
 		sheets=workbook.getSheetAt(sheet);
 		String celldataString=sheets.getRow(row).getCell(col).getStringCellValue();
+		workbook.close();
 		return celldataString;
+	
 	}
 	
 }
