@@ -30,6 +30,8 @@ import com.aventstack.extentreports.markuputils.ExtentColor;
 import com.aventstack.extentreports.markuputils.MarkupHelper;
 import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 import net.bytebuddy.description.annotation.AnnotationDescription.Loadable;
+import testngPrac.testngp.enums.Browser;
+import testngPrac.testngp.enums.OS;
 import util.CaptureScreenshot;
 import util.GetexcelData;
 import util.Reports;
@@ -52,18 +54,60 @@ public class baseClass {
 	@BeforeMethod
 	public void launchApp() throws Exception {
 		String browser=GetexcelData.getbrowser();
-		if(browser.equalsIgnoreCase("firefox")) {
+		if(System.getProperty("os.name").toLowerCase().contains(OS.WINDOW.name().toLowerCase())) {
+		  if(browser.equalsIgnoreCase(Browser.FIREFOX.name())) {
 			System.setProperty("webdriver.gecko.driver", "./Drivers/geckodriver.exe");
 			//DesiredCapabilities capabilities = DesiredCapabilities.firefox(); 
 	        //capabilities.setCapability("browser.privatebrowsing.autostart", true); 
 			driver=new FirefoxDriver();
-		}else if (browser.equalsIgnoreCase("chrome")) {
+		   }else if (browser.equalsIgnoreCase(Browser.CHROME.name())) {
 			System.setProperty("webdriver.chrome.driver", "./Drivers/chromedriver.exe");
-			 //ChromeOptions chromeOptions = new ChromeOptions();
-			    //chromeOptions.addArguments("--headless");
+			// ChromeOptions chromeOptions = new ChromeOptions();
+			 //chromeOptions.addArguments("--headless");
 			driver=new ChromeDriver();
-		}else {
+		   }else {
 			System.out.println("No driver found");
+		   }
+		}else if (System.getProperty("os.name").toLowerCase().contains(OS.MAC.name().toLowerCase())) {
+			 if(browser.equalsIgnoreCase(Browser.FIREFOX.name())) {
+					System.setProperty("webdriver.gecko.driver", "./Drivers/geckodriver.exe");
+					//DesiredCapabilities capabilities = DesiredCapabilities.firefox(); 
+			        //capabilities.setCapability("browser.privatebrowsing.autostart", true); 
+					driver=new FirefoxDriver();
+				   }else if (browser.equalsIgnoreCase(Browser.CHROME.name())) {
+					System.setProperty("webdriver.chrome.driver", "./Drivers/chromedriver.exe");
+					// ChromeOptions chromeOptions = new ChromeOptions();
+					 //chromeOptions.addArguments("--headless");
+					driver=new ChromeDriver();
+				   }else if (browser.equalsIgnoreCase(Browser.SAFARI.name())) {
+						System.setProperty("webdriver.chrome.driver", "./Drivers/chromedriver.exe");
+						// ChromeOptions chromeOptions = new ChromeOptions();
+						 //chromeOptions.addArguments("--headless");
+						driver=new ChromeDriver();
+				   }else {
+					System.out.println("No driver found");
+				   }
+		}else if (System.getProperty("os.name").toLowerCase().contains(OS.LINUX.name().toLowerCase())) {
+			if(browser.equalsIgnoreCase(Browser.FIREFOX.name())) {
+				System.setProperty("webdriver.gecko.driver", "./Drivers/geckodriver.exe");
+				//DesiredCapabilities capabilities = DesiredCapabilities.firefox(); 
+		        //capabilities.setCapability("browser.privatebrowsing.autostart", true); 
+				driver=new FirefoxDriver();
+			   }else if (browser.equalsIgnoreCase(Browser.CHROME.name())) {
+				System.setProperty("webdriver.chrome.driver", "./Drivers/chromedriver.exe");
+				// ChromeOptions chromeOptions = new ChromeOptions();
+				 //chromeOptions.addArguments("--headless");
+				driver=new ChromeDriver();
+			   }else if (browser.equalsIgnoreCase(Browser.OPERA.name())) {
+					System.setProperty("webdriver.chrome.driver", "./Drivers/chromedriver.exe");
+					// ChromeOptions chromeOptions = new ChromeOptions();
+					 //chromeOptions.addArguments("--headless");
+					driver=new ChromeDriver();
+			   }else {
+				System.out.println("No driver found");
+			   }
+		}else {
+			System.out.println("Operating System not supported");
 		}
 		driver.manage().window().maximize();
 		driver.get(GetexcelData.getSiteUrl());

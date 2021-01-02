@@ -5,11 +5,10 @@
     <classes>
       <class name="testngPrac.testngp.testcase">
         <methods>
-          <include name="getGoogleImageTest"/>
-          <include name="verifyCurrentUrlTest"/>
+          <include name="setupSuite"/>
           <include name="launchApp"/>
-          <include name="closeApp"/>
-          <include name="verifyTitleTest"/>
+          <include name="tearDown"/>
+          <include name="searchAppTest"/>
         </methods>
       </class> <!-- testngPrac.testngp.testcase -->
     </classes>

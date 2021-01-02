@@ -2,8 +2,32 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 <suite name="AppypieSuite" configfailurepolicy="continue"> 
 
-            <test name="FirefoxTest">
-             
+            <test name="chrometest">
+             <parameter name = "browser" value="chrome"/> 
+                     <classes>
+
+                             <class name ="testngPrac.testngp.testcase" />
+                             
+                     </classes>
+             </test>
+             <test name="firefoxtest">
+             <parameter name = "browser" value="firefox"/> 
+                     <classes>
+
+                             <class name ="testngPrac.testngp.testcase" />
+                             
+                     </classes>
+             </test>
+             <test name="operatest">
+             <parameter name = "browser" value="opera"/> 
+                     <classes>
+
+                             <class name ="testngPrac.testngp.testcase" />
+                             
+                     </classes>
+             </test>
+             <test name="safaritest">
+             <parameter name = "browser" value="safari"/> 
                      <classes>
 
                              <class name ="testngPrac.testngp.testcase" />

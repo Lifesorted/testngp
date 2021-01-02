@@ -94,7 +94,7 @@ public class GoogleHome extends baseClass {
 	@FindBy(xpath = "//ul[@id=\"introStyle\"]/child::li[4]")
 	WebElement elementtobeadd;
 	
-	@FindBy(xpath = "//div[@class=\"text-right col-md-12 col-sm-12\"]/descendant::span")
+	@FindBy(xpath = "//h1[@class=\"heading-top ng-binding\"]/child::span")
 	WebElement BID;
 	
 	@FindBy(xpath = "//li[@class=\"dropdown\"]/child::a")
@@ -143,14 +143,15 @@ public class GoogleHome extends baseClass {
 		Assert.assertTrue(gotomyapps.isDisplayed());
 	}
 	protected void loginToApp() {
-		if(LoginBtn.isDisplayed()) {
-			LoginBtn.click();
+		//if(LoginBtn.isDisplayed()) {
+			//LoginBtn.click();
+			clickkeyswait(driver, LoginBtn,25);
 			username.sendKeys("shailendra@appypiellp.com");
 			password.sendKeys("secure@web1");
 			loginme.click();
-		}else {
-			System.out.println("Login button not displayed");
-		}
+		//}else {
+			//System.out.println("Login button not displayed");
+		//}
 	}
 	
 	protected void logoutToApp() {

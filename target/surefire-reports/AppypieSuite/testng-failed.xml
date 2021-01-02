@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite configfailurepolicy="continue" guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [AppypieSuite]">
+  <test thread-count="5" verbose="0" name="FirefoxTest(failed)">
+    <classes>
+      <class name="testngPrac.testngp.testcase">
+        <methods>
+          <include name="setupSuite"/>
+          <include name="launchApp"/>
+          <include name="tearDown"/>
+          <include name="searchAppTest"/>
+        </methods>
+      </class> <!-- testngPrac.testngp.testcase -->
+    </classes>
+  </test> <!-- FirefoxTest(failed) -->
+</suite> <!-- Failed suite [AppypieSuite] -->

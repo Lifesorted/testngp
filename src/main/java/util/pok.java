@@ -7,7 +7,9 @@ public class pok {
 	public static void main(String args[]) throws Exception {
 		//GetexcelData mmData=new GetexcelData();
 		//mmData.getalldata(3);
-		System.out.println(GetexcelData.getbrowser());
+		getPropertyData gPropertyData=new getPropertyData();
+		System.out.println(gPropertyData.getbrowser());
+		//System.out.println(GetexcelData.getbrowser());
 		try {
 			System.out.println(GetexcelData.getCellValue(0, 0, 3));
 		} catch (Exception e1) {
