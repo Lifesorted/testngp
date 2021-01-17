@@ -12,6 +12,7 @@ import org.openqa.selenium.safari.SafariDriver.WindowType;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 
@@ -77,10 +78,10 @@ public class GoogleHome extends baseClass {
 	@FindBy(xpath="//ul[@class=\"nav navbar-nav s-nav de-home-menu\"]/child::li")
 	WebElement allmenuElement;
 	
-	@FindBy(xpath = "//div[@class=\"search_myApp m-r-15 on pull-left flip\"]/child::input[@name=\"searchPage\"]")
+	@FindBy(xpath = "//div[@class=\"form-group search-input\"]/child::input[@name=\"searchPage\"]")
 	WebElement searchFieldElement;
 	
-	@FindBy(xpath = "//div[@class=\"search_myApp m-r-15 on pull-left flip\"]/child::button")
+	@FindBy(xpath = "//div[@class=\"form-group search-input\"]/child::button")
 	WebElement searchbtnElement;
 	
 	@FindBy(xpath = "//div[@class=\"appProductInfo\"]/child::h1[text()=\"Appium\"]/following-sibling::a")
@@ -113,6 +114,64 @@ public class GoogleHome extends baseClass {
 	@FindBy(xpath = "//div[@class=\"app-share\"]/child::label/child::input[@value=\"https://snappy.appypie.com/index/app-download/appId/54158ef6c991\"]")
 	WebElement copylink;
 	
+	@FindBy(xpath = "//div[@class=\"appProductInfo\"]/child::h1")
+	WebElement getallappname;
+	
+	@FindBy(xpath="//div[@class=\"content-wrap\"]/child::a[text()='Manage Mobile App']")
+	WebElement managemobile;
+	
+	@FindBy(xpath = "//li[@class=\"cursor-poi\"]/child::a/child::i[@class=\"icon-restaurant\"]")
+	WebElement foodcourt;
+	
+	@FindBy(xpath = "//div[@id=\"appEcommerceController\"]/descendant::li[@id=\"tab5\"]/a[text()=\"Import/Export (Menu)\"]")
+	WebElement tab5;
+	
+	@FindBy(xpath = "//select[@class=\"form-control ng-pristine ng-valid ng-touched\"]")
+	WebElement selectrest;
+	
+	@FindBy(xpath="//div[@class=\"col-md-12 col-sm-12 col-xs-12\"]/child::input[@value=\"Export CSV File\"]")
+	WebElement csvdownloadElement;
+	
+	protected void downloadExcelFile() {
+		loginToApp();
+		sendKeyswait(driver, searchFieldElement, 40, "appium");
+		searchbtnElement.click();
+		try {
+			clickkeyswait(driver, managemobile, 30);
+		} catch (Exception e) {
+			System.out.println(e);
+		}
+		JavascriptExecutor jse = (JavascriptExecutor)driver;
+		jse.executeScript("window.scrollBy(0,250)");
+		driver.navigate().refresh();
+		//jse.executeScript("arguments[0].click()", foodcourt);
+		Actions action =new Actions(driver);
+		action.moveToElement(driver.findElement(By.xpath("//div[@id=\"appEcommerceController\"]/descendant::li[@id=\"tab5\"]/a[text()=\"Import/Export (Menu)\"]"))).doubleClick().build().perform();
+		clickkeyswait(driver, foodcourt, 30);
+		//foodcourt.click();
+		try {
+			Thread.sleep(3000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		jse.executeScript("arguments[0].click()", tab5);
+		//clickkeyswait(driver, tab5, 40);
+		//tab5.click();
+		
+		Select selectrestaurant=new Select(selectrest);
+		selectrestaurant.selectByIndex(1);
+		csvdownloadElement.click();
+	}
+	
+	protected void getAllAppName() {
+		loginToApp();
+		List<WebElement> allapp=driver.findElements(By.xpath("//div[@class=\"appProductInfo\"]/child::h1"));
+		for (WebElement element : allapp) {
+			System.out.println(element.getText());
+		}
+	}
 	protected void downloadLinkVerify() {
 		loginToApp();
 		searchFieldElement.sendKeys("appium");

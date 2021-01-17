@@ -5,10 +5,10 @@
     <classes>
       <class name="testngPrac.testngp.testcase">
         <methods>
+          <include name="downloadcsvfile"/>
           <include name="setupSuite"/>
           <include name="launchApp"/>
           <include name="tearDown"/>
-          <include name="searchAppTest"/>
         </methods>
       </class> <!-- testngPrac.testngp.testcase -->
     </classes>

@@ -1,5 +1,6 @@
 package testngPrac.testngp;
 import java.io.IOException;
+import java.util.HashMap;
 import java.util.concurrent.TimeUnit;
 import org.apache.http.client.entity.EntityBuilder;
 import org.openqa.selenium.WebDriver;
@@ -7,6 +8,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.firefox.FirefoxOptions;
+import org.openqa.selenium.firefox.FirefoxProfile;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.support.FindBy;
 import org.testng.Assert;
@@ -57,14 +60,24 @@ public class baseClass {
 		if(System.getProperty("os.name").toLowerCase().contains(OS.WINDOW.name().toLowerCase())) {
 		  if(browser.equalsIgnoreCase(Browser.FIREFOX.name())) {
 			System.setProperty("webdriver.gecko.driver", "./Drivers/geckodriver.exe");
-			//DesiredCapabilities capabilities = DesiredCapabilities.firefox(); 
-	        //capabilities.setCapability("browser.privatebrowsing.autostart", true); 
-			driver=new FirefoxDriver();
+			FirefoxOptions options = new FirefoxOptions();
+			options.setProfile(new FirefoxProfile());
+			options.addPreference("dom.webnotifications.enabled", false);
+			options.addArguments("-private");
+			DesiredCapabilities capabilities = new DesiredCapabilities();
+	        capabilities.setCapability("moz:firefoxOptions",options); 
+			driver=new FirefoxDriver(options);
 		   }else if (browser.equalsIgnoreCase(Browser.CHROME.name())) {
 			System.setProperty("webdriver.chrome.driver", "./Drivers/chromedriver.exe");
-			// ChromeOptions chromeOptions = new ChromeOptions();
-			 //chromeOptions.addArguments("--headless");
-			driver=new ChromeDriver();
+			String downloadpath="D:\\Eclipse_Project\\testngp\\Screenshots";
+			HashMap<String, Object> chromeprefHashMap=new HashMap<String, Object>();
+			chromeprefHashMap.put("profile.default_content_settings.popups", 0);
+			chromeprefHashMap.put("download.default_directory", downloadpath);
+			ChromeOptions chromeOptions = new ChromeOptions();
+			chromeOptions.setExperimentalOption("prefs", chromeprefHashMap);
+			chromeOptions.addArguments("--disable-notifications");
+			//chromeOptions.addArguments("--incognito");
+			driver=new ChromeDriver(chromeOptions);
 		   }else {
 			System.out.println("No driver found");
 		   }

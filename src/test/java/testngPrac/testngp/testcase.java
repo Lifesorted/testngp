@@ -10,10 +10,11 @@ public class testcase extends baseClass {
 	
 	
 	
-	  @Test(priority = 1,description = "verify title test") public void
-	  verifyTitleTest() { GoogleHome gHome=new GoogleHome(driver);
-	  gHome.sgetSiteTitle(); extent.createTest("Verify title test"); }
-	 
+	/*
+	 * @Test(priority = 1,description = "verify title test") public void
+	 * verifyTitleTest() { GoogleHome gHome=new GoogleHome(driver);
+	 * gHome.sgetSiteTitle(); extent.createTest("Verify title test"); }
+	 */
 	
 	/*
 	 * @Test(priority = 2,description = "verify current url test") public void
@@ -43,17 +44,6 @@ public class testcase extends baseClass {
 	 * @Test public void AllMenuOptionTest() { GoogleHome gHome=new
 	 * GoogleHome(driver); gHome.allMenuOptions(); }
 	 */
-	
-
-	/*
-	 * @Test public void searchAppTest() { GoogleHome gHome=new GoogleHome(driver);
-	 * gHome.searchAppTest(); }
-	 * 
-	 */
-	
-	  @Test public void searchAppTest() { GoogleHome gHome=new GoogleHome(driver);
-	  gHome.searchAppTest(); }
-	 
 	 
 	/*
 	 * @Test public void logoutAppTest() { GoogleHome gHome=new GoogleHome(driver);
@@ -69,4 +59,15 @@ public class testcase extends baseClass {
 	 * @Test public void addFeatureTest() { GoogleHome gHome=new GoogleHome(driver);
 	 * gHome.downloadLinkVerify(); }
 	 */
+	
+	/*
+	 * @Test public void getAllappname() { GoogleHome gHome=new GoogleHome(driver);
+	 * gHome.getAllAppName(); }
+	 */
+	@Test
+	public void downloadcsvfile() {
+		GoogleHome gHome=new GoogleHome(driver);
+		gHome.downloadExcelFile();
+	}
+	
 }

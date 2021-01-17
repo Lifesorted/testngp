@@ -19,7 +19,7 @@ public class GetexcelData {
 		fis=new FileInputStream(srcFile);
 	    workbook=new XSSFWorkbook(fis);
 	    sheets=workbook.getSheetAt(0);
-		String browserval=sheets.getRow(0).getCell(2).getStringCellValue();
+		String browserval=sheets.getRow(0).getCell(1).getStringCellValue();
 		return browserval;
 	}
 	
@@ -66,6 +66,14 @@ public class GetexcelData {
 		workbook.close();
 		return celldataString;
 	
+	}
+	
+	protected String getdatafromNode(int sheet,int row, int cell) throws IOException {
+		fis=new FileInputStream(srcFile);
+		workbook=new XSSFWorkbook(fis);
+		sheets=workbook.getSheetAt(sheet);
+		String valueofcell=sheets.getRow(row).getCell(cell).getStringCellValue();
+		return valueofcell;
 	}
 	
 }
